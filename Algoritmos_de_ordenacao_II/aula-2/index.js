@@ -25,6 +25,7 @@ function ordena(lista1, lista2){
 }
 
 function mergeSort(array){
+
 	if( array.length > 1 ){
 		const meio = Math.floor(array.length/2);
 		const parte1 = mergeSort(array.slice(0, meio));
@@ -34,7 +35,6 @@ function mergeSort(array){
 
 	return array;
 }
-
 
 
 console.log(mergeSort(listaLivros));
